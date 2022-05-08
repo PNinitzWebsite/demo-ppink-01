@@ -1,0 +1,170 @@
+//import rfs
+@import "node_modules/rfs/scss.scss";
+//rfs
+
+h1 {
+    color: #758ed7;
+    text-align: center;
+}
+h2 {
+    @include margin-top(1rem);
+    color: #a0b9f9;
+    text-align: center;
+}
+h3 {
+    @include margin-top(.8rem);
+    color: #a0b9f9;
+    text-align:left;
+    display: inline-block;
+}
+.fs-5 {zoom: 60%}
+.fs-6 {zoom: 47%}
+.container {
+    @include margin(5rem auto);
+    animation-name: down-top;animation-duration: 2.5s;
+}
+main {
+    max-width: 45rem;width: 100%;
+    border-radius: calc(2rem + 0.9vw) ;
+    background-color: #f8e7f1;
+}
+body {background-color:#f5c5db;}
+.box {max-width: 88%;width: 100%;
+    border-radius: calc(2rem + 0.9vw) ;
+    background-color: white;
+}
+.box img{max-width: 100%;width: 100%;}
+.p-br {
+    @include padding-top(3rem);
+}
+.p-br-2 {
+    @include padding-top(1.5rem );
+}
+.p-br-3 {
+    @include padding-top(1rem );
+}
+.border-br {
+    background-color: #ffe9ff;
+    border-radius: 20px;
+    width: 85%;
+    @include padding(.28%);
+}
+a.btn {
+    background-color: #f5c5db;
+    border-radius: calc(.5rem + 0.9vw);
+    color: white;
+    display: block;
+    width: 63%;
+    @include margin-bottom(.8rem);
+}
+a.btn:hover {
+    color: #f8e7f1;transition: all .3s ease-in-out;
+}
+
+body {display: block;}
+
+
+
+// @media screen
+// X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+@media (min-width: 300px) { 
+    body {display: block;}
+    .fs-5 {zoom: 60%}
+    .fs-6 {zoom: 50%}
+    main {
+        max-width: 45rem;width: 95%;
+    }
+    .box {
+        max-width: 85%;width: 100%;
+    }
+}
+@media (min-width: 375px) { 
+    body {display: block;}
+    .fs-5 {zoom: 68%}
+    .fs-6 {zoom: 58%}
+    main {
+        max-width: 45rem;width: 95%;
+    }
+    .box {
+        max-width: 85%;width: 100%;
+    }
+}
+@media (min-width: 425px) { 
+    body {display: block;}
+    .fs-5 {zoom: 78%}
+    .fs-6 {zoom: 68%}
+    main {
+        max-width: 45rem;width: 95%;
+    }
+    .box {
+        max-width: 85%;width: 100%;
+    }
+}
+@media (min-width: 500px) { 
+    body {display: block;}
+    .fs-5 {zoom: 88%}
+    .fs-6 {zoom: 78%}
+    main {
+        max-width: 45rem;width: 95%;
+    }
+    .box {
+        max-width: 85%;width: 100%;
+    }
+}
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+    body {display: block;}
+    .fs-5 {zoom: 95%}
+    .fs-6 {zoom: 85%}
+    main {
+        max-width: 45rem;width: 95%;
+    }
+    .box {
+        max-width: 85%;width: 100%;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+    body {display: block;}
+    .fs-5 {zoom: 98%}
+    .fs-6 {zoom: 95%}
+    main {
+        max-width: 45rem;width: 80%;
+    }
+    .box {
+        max-width: 85%;width: 100%;
+    }
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+    body {display: block;}
+    .fs-5 {zoom: 120%}
+    .fs-6 {zoom: 110%}
+    main {
+        max-width: 45rem;width: 100%;
+    }
+    .box {
+        max-width: 88%;width: 100%;
+    }
+ }
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+    body {display: block;}
+ }
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { 
+    body {display: block;}
+ }
+
+
+@keyframes down-top {
+    from {transform: translateY(100px);opacity: 0;}
+    to {transform: translateY(0px);opacity: 1;}
+}
+
